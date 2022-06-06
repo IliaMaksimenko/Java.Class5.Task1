@@ -56,7 +56,8 @@ public class BonusServiceTest {
 
     }
 
-    @org.junit.jupiter.api.Test   // Нулевые значения переменных
+    @org.junit.jupiter.api.Test
+        // Нулевые значения переменных
     void shouldCalculateForUnRegisteredAndZeroAmount() {
         BonusService service = new BonusService();
 
@@ -70,7 +71,8 @@ public class BonusServiceTest {
 
     }
 
-    @org.junit.jupiter.api.Test   // Нулевые значения переменных
+    @org.junit.jupiter.api.Test
+        // Нулевые значения переменных
     void shouldCalculateForRegisteredAndZeroAmount() {
         BonusService service = new BonusService();
 
@@ -84,7 +86,8 @@ public class BonusServiceTest {
 
     }
 
-    @org.junit.jupiter.api.Test    //Минимальное целое положительное число
+    @org.junit.jupiter.api.Test
+        //Минимальное целое положительное число
     void shouldCalculateForUnRegisteredAndMinimalAmount() {
         BonusService service = new BonusService();
 
@@ -98,7 +101,8 @@ public class BonusServiceTest {
 
     }
 
-    @org.junit.jupiter.api.Test   //Максимально допустимое значение стоимости (предел для переменных типа int)
+    @org.junit.jupiter.api.Test
+        //Максимально допустимое значение стоимости (предел для переменных типа int)
     void shouldCalculateForUnRegisteredAndMaximumAmount() {
         BonusService service = new BonusService();
 
@@ -112,7 +116,8 @@ public class BonusServiceTest {
 
     }
 
-    @org.junit.jupiter.api.Test   //Граничные значения максимально допустимого значение стоимости (предел для переменных типа int)
+    @org.junit.jupiter.api.Test
+        //Граничные значения максимально допустимого значение стоимости (предел для переменных типа int)
     void shouldCalculateForUnRegisteredAndMaximumAmountMinusOne() {
         BonusService service = new BonusService();
 
@@ -127,7 +132,8 @@ public class BonusServiceTest {
     }
 
 
-    @org.junit.jupiter.api.Test   //Отрицательное значение и самое минимальное значение типа int
+    @org.junit.jupiter.api.Test
+        //Отрицательное значение и самое минимальное значение типа int
     void shouldCalculateForUnRegisteredAndNegativeMeaning() {
         BonusService service = new BonusService();
 
@@ -142,7 +148,8 @@ public class BonusServiceTest {
     }
 
 
-    @org.junit.jupiter.api.Test    //Тестируем на отказ
+    @org.junit.jupiter.api.Test
+        //Тестируем на отказ
     void shouldCalculateForUnRegisteredAndFailureTesting() {
         BonusService service = new BonusService();
 
